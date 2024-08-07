@@ -13,9 +13,12 @@ Depending on the choice made the call or chat is routed.
 7.  Realtime metrics and reporting are implemented
 8.  Historical metrics and reporting are implemented
 
-Next version will include
-1.  Recording and live monitoring of chat conversations
-2.  Automatic task creation
-3.  AWS Lamba integration with Amazon Connect
-4.  AWS Lex Chatbot will be implementd
+Version 2.0
+
+1.  Recording and live monitoring of chat conversations are implemented
+2.  Automatic task creation is implemented
+3.  AWS Lamba integration with Amazon Connect is implemented
+
+   Next version will include
+1.  AWS Lex Chatbot will be implementd
 
