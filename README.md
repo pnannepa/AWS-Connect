@@ -19,6 +19,6 @@ Version 2.0
 2.  Automatic task creation is implemented
 3.  AWS Lamba integration with Amazon Connect is implemented
 
-   Next version will include
-1.  AWS Lex Chatbot will be implementd
+Version 3.0
+1.  AWS Lex Chatbot is implemented
 
