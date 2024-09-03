@@ -1,0 +1,84 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "d611d8b6-462b-482c-af8f-7906c6d5d781",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -116,
+      "y": 22.4
+    },
+    "ActionMetadata": {
+      "d611d8b6-462b-482c-af8f-7906c6d5d781": {
+        "position": {
+          "x": 48,
+          "y": 11.2
+        },
+        "parameters": {
+          "QueueId": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "ab8bee89-66c6-4b7d-a159-c6cbe579c5df": {
+        "position": {
+          "x": 638.4,
+          "y": 88.8
+        }
+      },
+      "85a86628-15f7-4e69-b235-f389af5ed213": {
+        "position": {
+          "x": 314.4,
+          "y": 6.4
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "A2Z Cloud Services Task Flow",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "QueueId": "$.Attributes.SelectedQueue"
+      },
+      "Identifier": "d611d8b6-462b-482c-af8f-7906c6d5d781",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "85a86628-15f7-4e69-b235-f389af5ed213",
+        "Errors": [
+          {
+            "NextAction": "85a86628-15f7-4e69-b235-f389af5ed213",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "ab8bee89-66c6-4b7d-a159-c6cbe579c5df",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {},
+      "Identifier": "85a86628-15f7-4e69-b235-f389af5ed213",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "ab8bee89-66c6-4b7d-a159-c6cbe579c5df",
+        "Errors": [
+          {
+            "NextAction": "ab8bee89-66c6-4b7d-a159-c6cbe579c5df",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "ab8bee89-66c6-4b7d-a159-c6cbe579c5df",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

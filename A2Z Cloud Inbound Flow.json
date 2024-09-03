@@ -7,58 +7,10 @@
       "y": -14.4
     },
     "ActionMetadata": {
-      "0c6afbe0-2c17-4033-bf37-5fc43df945ee": {
-        "position": {
-          "x": 502.4,
-          "y": 407.2
-        }
-      },
       "74299e6d-9070-407a-869d-37ad697d4f88": {
         "position": {
           "x": 1711.2,
           "y": 27.2
-        }
-      },
-      "533a40a3-2d65-440a-8d5a-dfb108b650df": {
-        "position": {
-          "x": 800,
-          "y": 20.8
-        },
-        "parameters": {
-          "QueueId": {
-            "displayName": "Sales Queue"
-          }
-        },
-        "queue": {
-          "text": "Sales Queue"
-        }
-      },
-      "da3f0056-eb4f-4429-92c3-00402245be46": {
-        "position": {
-          "x": 800,
-          "y": 221.6
-        },
-        "parameters": {
-          "QueueId": {
-            "displayName": "Customer Service Queue"
-          }
-        },
-        "queue": {
-          "text": "Customer Service Queue"
-        }
-      },
-      "a215ce09-8aa4-4202-957e-a7f5f95cf771": {
-        "position": {
-          "x": 803.2,
-          "y": 420
-        },
-        "parameters": {
-          "QueueId": {
-            "displayName": "Technical Support Queue"
-          }
-        },
-        "queue": {
-          "text": "Technical Support Queue"
         }
       },
       "ef0cc618-5e3a-47ba-8208-95d88e2b15a4": {
@@ -79,12 +31,6 @@
         },
         "customerOrAgent": true
       },
-      "d597c935-68be-4379-ab19-ba91f14d0114": {
-        "position": {
-          "x": 1099.2,
-          "y": 40
-        }
-      },
       "20513dd3-9077-45c3-906e-630993dc84bc": {
         "position": {
           "x": 1964,
@@ -98,7 +44,7 @@
         },
         "conditionMetadata": [
           {
-            "id": "814607b7-35c2-48b3-a53e-26d2e036f646",
+            "id": "3e17497d-c597-4bc3-b941-c995633430f6",
             "value": "1"
           }
         ]
@@ -164,32 +110,6 @@
         },
         "customerOrAgent": true
       },
-      "6ffd6162-37fd-47f3-91b4-5e10378a8dca": {
-        "position": {
-          "x": 486.4,
-          "y": 25.6
-        },
-        "conditionMetadata": [
-          {
-            "id": "efc6326b-0935-4c0e-9f7e-86cd818c8a63",
-            "value": "1"
-          },
-          {
-            "id": "ee382819-d532-4166-9b6b-39af0b5aa0b9",
-            "value": "2"
-          },
-          {
-            "id": "0e41de5f-a8f5-492a-9480-0632f6539712",
-            "value": "3"
-          }
-        ]
-      },
-      "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb": {
-        "position": {
-          "x": 1281.6,
-          "y": 411.2
-        }
-      },
       "536ec0f3-02b7-46fd-9467-3d63428950e5": {
         "position": {
           "x": 183.2,
@@ -202,6 +122,54 @@
         },
         "dynamicMetadata": {}
       },
+      "d597c935-68be-4379-ab19-ba91f14d0114": {
+        "position": {
+          "x": 1099.2,
+          "y": 40
+        }
+      },
+      "da3f0056-eb4f-4429-92c3-00402245be46": {
+        "position": {
+          "x": 800,
+          "y": 221.6
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "Customer Service Queue"
+          }
+        },
+        "queue": {
+          "text": "Customer Service Queue"
+        }
+      },
+      "533a40a3-2d65-440a-8d5a-dfb108b650df": {
+        "position": {
+          "x": 800,
+          "y": 20.8
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "Sales Queue"
+          }
+        },
+        "queue": {
+          "text": "Sales Queue"
+        }
+      },
+      "a215ce09-8aa4-4202-957e-a7f5f95cf771": {
+        "position": {
+          "x": 803.2,
+          "y": 420
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "Technical Support Queue"
+          }
+        },
+        "queue": {
+          "text": "Technical Support Queue"
+        }
+      },
       "6ba1c5ef-1a73-4880-9c2d-54a3a0218cee": {
         "position": {
           "x": 225.6,
@@ -213,32 +181,69 @@
           }
         },
         "useDynamic": true
+      },
+      "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb": {
+        "position": {
+          "x": 1281.6,
+          "y": 411.2
+        }
+      },
+      "6ffd6162-37fd-47f3-91b4-5e10378a8dca": {
+        "position": {
+          "x": 486.4,
+          "y": 25.6
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "A2ZCloudConnectBot",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "A2ZCloudSupport"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "A2ZCloudSupport",
+        "lexV2BotAliasName": "A2ZCloudConnectBot",
+        "conditionMetadata": [
+          {
+            "id": "347ffdca-98ad-492c-a5c9-20c0166e127d",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FallbackIntent"
+          },
+          {
+            "id": "86eb5ee5-2f49-453b-8cbf-9e4bb190de92",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "CloudserviceDown"
+          },
+          {
+            "id": "1f018a05-b6e4-48e2-8d45-65dc47a19289",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "NewService"
+          }
+        ]
       }
     },
     "Annotations": [],
     "name": "A2Z Cloud Inbound Flow",
     "description": "Main inbound flow for A2Z Cloud",
     "type": "contactFlow",
-    "status": "published",
+    "status": "PUBLISHED",
     "hash": {}
   },
   "Actions": [
-    {
-      "Parameters": {
-        "Text": "Sorry that is an invalid option"
-      },
-      "Identifier": "0c6afbe0-2c17-4033-bf37-5fc43df945ee",
-      "Type": "MessageParticipant",
-      "Transitions": {
-        "NextAction": "6ffd6162-37fd-47f3-91b4-5e10378a8dca",
-        "Errors": [
-          {
-            "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
-            "ErrorType": "NoMatchingError"
-          }
-        ]
-      }
-    },
     {
       "Parameters": {},
       "Identifier": "74299e6d-9070-407a-869d-37ad697d4f88",
@@ -259,54 +264,6 @@
     },
     {
       "Parameters": {
-        "QueueId": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/queue/abcb577c-3ad1-492d-928a-5adf1d800fe0"
-      },
-      "Identifier": "533a40a3-2d65-440a-8d5a-dfb108b650df",
-      "Type": "UpdateContactTargetQueue",
-      "Transitions": {
-        "NextAction": "d597c935-68be-4379-ab19-ba91f14d0114",
-        "Errors": [
-          {
-            "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
-            "ErrorType": "NoMatchingError"
-          }
-        ]
-      }
-    },
-    {
-      "Parameters": {
-        "QueueId": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/queue/50d5c861-8ff8-476e-ba29-08577426d814"
-      },
-      "Identifier": "da3f0056-eb4f-4429-92c3-00402245be46",
-      "Type": "UpdateContactTargetQueue",
-      "Transitions": {
-        "NextAction": "d597c935-68be-4379-ab19-ba91f14d0114",
-        "Errors": [
-          {
-            "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
-            "ErrorType": "NoMatchingError"
-          }
-        ]
-      }
-    },
-    {
-      "Parameters": {
-        "QueueId": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/queue/d3c059a6-37f2-444d-9280-995e705f4382"
-      },
-      "Identifier": "a215ce09-8aa4-4202-957e-a7f5f95cf771",
-      "Type": "UpdateContactTargetQueue",
-      "Transitions": {
-        "NextAction": "d597c935-68be-4379-ab19-ba91f14d0114",
-        "Errors": [
-          {
-            "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
-            "ErrorType": "NoMatchingError"
-          }
-        ]
-      }
-    },
-    {
-      "Parameters": {
         "EventHooks": {
           "CustomerWhisper": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/contact-flow/39b6e603-b113-4127-8a50-2cfa1e4cb74f"
         }
@@ -318,40 +275,6 @@
         "Errors": [
           {
             "NextAction": "74299e6d-9070-407a-869d-37ad697d4f88",
-            "ErrorType": "NoMatchingError"
-          }
-        ]
-      }
-    },
-    {
-      "Parameters": {},
-      "Identifier": "d597c935-68be-4379-ab19-ba91f14d0114",
-      "Type": "CheckHoursOfOperation",
-      "Transitions": {
-        "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
-        "Conditions": [
-          {
-            "NextAction": "ef0cc618-5e3a-47ba-8208-95d88e2b15a4",
-            "Condition": {
-              "Operator": "Equals",
-              "Operands": [
-                "True"
-              ]
-            }
-          },
-          {
-            "NextAction": "3151bcea-4555-4bd4-9b7d-6ebe2f2ac361",
-            "Condition": {
-              "Operator": "Equals",
-              "Operands": [
-                "False"
-              ]
-            }
-          }
-        ],
-        "Errors": [
-          {
-            "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
             "ErrorType": "NoMatchingError"
           }
         ]
@@ -489,39 +412,46 @@
     },
     {
       "Parameters": {
-        "StoreInput": "False",
-        "InputTimeLimitSeconds": "5",
-        "Text": "Please enter 1 for Sales 2 for Customer Service and 3 for Technical Support"
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:510701891233:function:myFirstLambda",
+        "InvocationTimeLimitSeconds": "3",
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
       },
-      "Identifier": "6ffd6162-37fd-47f3-91b4-5e10378a8dca",
-      "Type": "GetParticipantInput",
+      "Identifier": "536ec0f3-02b7-46fd-9467-3d63428950e5",
+      "Type": "InvokeLambdaFunction",
       "Transitions": {
-        "NextAction": "0c6afbe0-2c17-4033-bf37-5fc43df945ee",
+        "NextAction": "6ba1c5ef-1a73-4880-9c2d-54a3a0218cee",
+        "Errors": [
+          {
+            "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "d597c935-68be-4379-ab19-ba91f14d0114",
+      "Type": "CheckHoursOfOperation",
+      "Transitions": {
+        "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
         "Conditions": [
           {
-            "NextAction": "533a40a3-2d65-440a-8d5a-dfb108b650df",
+            "NextAction": "ef0cc618-5e3a-47ba-8208-95d88e2b15a4",
             "Condition": {
               "Operator": "Equals",
               "Operands": [
-                "1"
+                "True"
               ]
             }
           },
           {
-            "NextAction": "da3f0056-eb4f-4429-92c3-00402245be46",
+            "NextAction": "3151bcea-4555-4bd4-9b7d-6ebe2f2ac361",
             "Condition": {
               "Operator": "Equals",
               "Operands": [
-                "2"
-              ]
-            }
-          },
-          {
-            "NextAction": "a215ce09-8aa4-4202-957e-a7f5f95cf771",
-            "Condition": {
-              "Operator": "Equals",
-              "Operands": [
-                "3"
+                "False"
               ]
             }
           }
@@ -529,12 +459,68 @@
         "Errors": [
           {
             "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
-            "ErrorType": "InputTimeLimitExceeded"
-          },
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/queue/50d5c861-8ff8-476e-ba29-08577426d814"
+      },
+      "Identifier": "da3f0056-eb4f-4429-92c3-00402245be46",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "d597c935-68be-4379-ab19-ba91f14d0114",
+        "Errors": [
           {
-            "NextAction": "0c6afbe0-2c17-4033-bf37-5fc43df945ee",
-            "ErrorType": "NoMatchingCondition"
-          },
+            "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/queue/abcb577c-3ad1-492d-928a-5adf1d800fe0"
+      },
+      "Identifier": "533a40a3-2d65-440a-8d5a-dfb108b650df",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "d597c935-68be-4379-ab19-ba91f14d0114",
+        "Errors": [
+          {
+            "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/queue/d3c059a6-37f2-444d-9280-995e705f4382"
+      },
+      "Identifier": "a215ce09-8aa4-4202-957e-a7f5f95cf771",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "d597c935-68be-4379-ab19-ba91f14d0114",
+        "Errors": [
+          {
+            "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.body"
+      },
+      "Identifier": "6ba1c5ef-1a73-4880-9c2d-54a3a0218cee",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "6ffd6162-37fd-47f3-91b4-5e10378a8dca",
+        "Errors": [
           {
             "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
             "ErrorType": "NoMatchingError"
@@ -560,33 +546,49 @@
     },
     {
       "Parameters": {
-        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:510701891233:function:myFirstLambda",
-        "InvocationTimeLimitSeconds": "3",
-        "ResponseValidation": {
-          "ResponseType": "STRING_MAP"
+        "Text": "How may I help you?",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:510701891233:bot-alias/RDLIQBG1QR/CSVI74GXFN"
         }
       },
-      "Identifier": "536ec0f3-02b7-46fd-9467-3d63428950e5",
-      "Type": "InvokeLambdaFunction",
+      "Identifier": "6ffd6162-37fd-47f3-91b4-5e10378a8dca",
+      "Type": "ConnectParticipantWithLexBot",
       "Transitions": {
-        "NextAction": "6ba1c5ef-1a73-4880-9c2d-54a3a0218cee",
+        "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
+        "Conditions": [
+          {
+            "NextAction": "da3f0056-eb4f-4429-92c3-00402245be46",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FallbackIntent"
+              ]
+            }
+          },
+          {
+            "NextAction": "a215ce09-8aa4-4202-957e-a7f5f95cf771",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "CloudserviceDown"
+              ]
+            }
+          },
+          {
+            "NextAction": "533a40a3-2d65-440a-8d5a-dfb108b650df",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "NewService"
+              ]
+            }
+          }
+        ],
         "Errors": [
           {
             "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
-            "ErrorType": "NoMatchingError"
-          }
-        ]
-      }
-    },
-    {
-      "Parameters": {
-        "Text": "$.External.body"
-      },
-      "Identifier": "6ba1c5ef-1a73-4880-9c2d-54a3a0218cee",
-      "Type": "MessageParticipant",
-      "Transitions": {
-        "NextAction": "6ffd6162-37fd-47f3-91b4-5e10378a8dca",
-        "Errors": [
+            "ErrorType": "NoMatchingCondition"
+          },
           {
             "NextAction": "6ace7fc1-df15-4e6b-9444-1f90ed23d7eb",
             "ErrorType": "NoMatchingError"

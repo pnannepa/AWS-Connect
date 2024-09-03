@@ -1,0 +1,320 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "cb224053-27c8-4bbd-9bde-a156cd02e736",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -428,
+      "y": 27.2
+    },
+    "ActionMetadata": {
+      "ec885049-85b1-4595-8961-d18a3d65df69": {
+        "position": {
+          "x": 308.8,
+          "y": 26.4
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "Customer Service Queue"
+          }
+        },
+        "queue": {
+          "text": "Customer Service Queue"
+        }
+      },
+      "1276095e-82d5-49df-b2a9-76cbd4652a30": {
+        "position": {
+          "x": 311.2,
+          "y": 231.2
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "Sales Queue"
+          }
+        },
+        "queue": {
+          "text": "Sales Queue"
+        }
+      },
+      "50ad38d4-4528-4436-a62b-7349ad9bd8fc": {
+        "position": {
+          "x": 891.2,
+          "y": 251.2
+        }
+      },
+      "be069361-a56d-4d1f-ad17-21c0f3b16082": {
+        "position": {
+          "x": 566.4,
+          "y": 24
+        }
+      },
+      "ec8fbace-e7ba-49ca-991e-c32e30e7ef64": {
+        "position": {
+          "x": 12.8,
+          "y": -13.6
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "A2ZCloudConnectBot",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "A2ZCloudSupport"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "A2ZCloudSupport",
+        "lexV2BotAliasName": "A2ZCloudConnectBot",
+        "conditionMetadata": [
+          {
+            "id": "cfaab8fc-98d7-4e2a-b2d2-e9807d921ab0",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "NewService"
+          },
+          {
+            "id": "aeeee955-2a4e-494a-8847-38a4ace1908f",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FallbackIntent"
+          },
+          {
+            "id": "1723a4c7-b844-4e21-ada6-361691c4ce16",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "CloudserviceDown"
+          }
+        ]
+      },
+      "7a4c2fd7-3d8e-4283-8a6d-a8509f0906b4": {
+        "position": {
+          "x": 304.8,
+          "y": 453.6
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "Technical Support Queue"
+          }
+        },
+        "queue": {
+          "text": "Technical Support Queue"
+        }
+      },
+      "e409a87b-1c73-4d8a-bc95-baad86a21e46": {
+        "position": {
+          "x": 1127.2,
+          "y": 301.6
+        }
+      },
+      "6fa036d2-3cb4-4800-98e0-263201855a9e": {
+        "position": {
+          "x": -214.4,
+          "y": 208
+        },
+        "parameters": {
+          "EventHooks": {
+            "CustomerRemaining": {
+              "displayName": "A2Z Cloud Services Disconnected Chat Flow"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "A2Z Cloud Services Disconnected Chat Flow",
+          "id": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/contact-flow/556758d5-b17a-4dac-a2d3-f1d3694b6250"
+        }
+      },
+      "cb224053-27c8-4bbd-9bde-a156cd02e736": {
+        "position": {
+          "x": -320.8,
+          "y": 18.4
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "A2Z Cloud Services Inbound Chat Flow",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/queue/50d5c861-8ff8-476e-ba29-08577426d814"
+      },
+      "Identifier": "ec885049-85b1-4595-8961-d18a3d65df69",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "be069361-a56d-4d1f-ad17-21c0f3b16082",
+        "Errors": [
+          {
+            "NextAction": "50ad38d4-4528-4436-a62b-7349ad9bd8fc",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/queue/abcb577c-3ad1-492d-928a-5adf1d800fe0"
+      },
+      "Identifier": "1276095e-82d5-49df-b2a9-76cbd4652a30",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "be069361-a56d-4d1f-ad17-21c0f3b16082",
+        "Errors": [
+          {
+            "NextAction": "50ad38d4-4528-4436-a62b-7349ad9bd8fc",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Sorry an error occurred.  Please contact us later"
+      },
+      "Identifier": "50ad38d4-4528-4436-a62b-7349ad9bd8fc",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "e409a87b-1c73-4d8a-bc95-baad86a21e46",
+        "Errors": [
+          {
+            "NextAction": "e409a87b-1c73-4d8a-bc95-baad86a21e46",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "be069361-a56d-4d1f-ad17-21c0f3b16082",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "50ad38d4-4528-4436-a62b-7349ad9bd8fc",
+        "Errors": [
+          {
+            "NextAction": "50ad38d4-4528-4436-a62b-7349ad9bd8fc",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "50ad38d4-4528-4436-a62b-7349ad9bd8fc",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Thank you for contacting A2Z Cloud Services,  How may I help you today?",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:510701891233:bot-alias/RDLIQBG1QR/CSVI74GXFN"
+        }
+      },
+      "Identifier": "ec8fbace-e7ba-49ca-991e-c32e30e7ef64",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "50ad38d4-4528-4436-a62b-7349ad9bd8fc",
+        "Conditions": [
+          {
+            "NextAction": "1276095e-82d5-49df-b2a9-76cbd4652a30",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "NewService"
+              ]
+            }
+          },
+          {
+            "NextAction": "ec885049-85b1-4595-8961-d18a3d65df69",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FallbackIntent"
+              ]
+            }
+          },
+          {
+            "NextAction": "7a4c2fd7-3d8e-4283-8a6d-a8509f0906b4",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "CloudserviceDown"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "50ad38d4-4528-4436-a62b-7349ad9bd8fc",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "50ad38d4-4528-4436-a62b-7349ad9bd8fc",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/queue/d3c059a6-37f2-444d-9280-995e705f4382"
+      },
+      "Identifier": "7a4c2fd7-3d8e-4283-8a6d-a8509f0906b4",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "be069361-a56d-4d1f-ad17-21c0f3b16082",
+        "Errors": [
+          {
+            "NextAction": "50ad38d4-4528-4436-a62b-7349ad9bd8fc",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "e409a87b-1c73-4d8a-bc95-baad86a21e46",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerRemaining": "arn:aws:connect:us-east-1:510701891233:instance/71c5c52e-0742-4fec-9106-6996e83e5aae/contact-flow/556758d5-b17a-4dac-a2d3-f1d3694b6250"
+        }
+      },
+      "Identifier": "6fa036d2-3cb4-4800-98e0-263201855a9e",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "ec8fbace-e7ba-49ca-991e-c32e30e7ef64",
+        "Errors": [
+          {
+            "NextAction": "e409a87b-1c73-4d8a-bc95-baad86a21e46",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RecordingBehavior": {
+          "RecordedParticipants": []
+        }
+      },
+      "Identifier": "cb224053-27c8-4bbd-9bde-a156cd02e736",
+      "Type": "UpdateContactRecordingBehavior",
+      "Transitions": {
+        "NextAction": "6fa036d2-3cb4-4800-98e0-263201855a9e"
+      }
+    }
+  ]
+}
