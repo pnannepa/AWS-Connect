@@ -20,5 +20,5 @@ Version 2.0
 3.  AWS Lamba integration with Amazon Connect is implemented
 
 Version 3.0
-1.  AWS Lex Chatbot is implemented
+1.  AWS Lex AI Chatbot is implemented
 
