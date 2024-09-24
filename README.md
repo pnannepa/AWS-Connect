@@ -7,8 +7,8 @@ Depending on the choice made the call or chat is routed.
     Hours of operation are checked with a Check hours of operation block, 
 2.  The chat service is either basic chat or Asynchronous Chat.   In Async chat, the customer can disconnect and resume the chat within 4 hours
 3.  Call recording and playback are enabled.
-4.  Queue and Hold flows is implemented.
-5.  Whisper flow is implemented to enable the contact center manager to monitor live conversations between the agent and the customer
+4.  Queue and Hold flows are implemented.
+5.  Whisper flow is implemented.
 6.  Transfer flow and quick connects are enabled.
 7.  Realtime metrics and reporting are implemented
 8.  Historical metrics and reporting are implemented
